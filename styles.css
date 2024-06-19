@@ -1,0 +1,525 @@
+
+
+/* @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Duru+Sans&display=swap');
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  header {    
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .list_items{
+        
+    display: flex;    
+  }
+
+  .first{
+    position: relative;
+    bottom: 3%;
+    
+
+  }
+  
+  .nav{
+    height: 65px;
+    background-color: black;
+    position: absolute;
+    top: 30px;
+    width: 100%;
+
+    left: 0;
+    
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  main{
+    padding: 2rem;
+  }
+
+  span{
+    color: #85b7ca;
+  }
+
+  .container {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 30px;
+    height: 2px;
+    background-color: #ffffff;
+    margin: 6px ;
+    transition: 0.4s;    
+  }
+  
+/*  
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  
+  
+  .change .bar2 {opacity: 0;}
+  
+
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+  
+
+  
+  
+  
+  
+
+  
+  span{
+    color: #85b7ca;
+
+  }
+
+  .logoContainer{ 
+    position: absolute;
+    top: 0;
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    height: 4vh;
+    z-index: 3;
+  }
+
+  .logo{
+    display: inline-flex;
+    flex-direction: column;
+    
+    align-items: center;
+   
+
+  }
+  .logo>img{
+    flex-basis: 1vh;
+    margin-bottom: 0px;
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+
+  .logo>p{
+    
+      font-family: "Architects Daughter", cursive;
+      font-size: small;
+      font-weight: 400;
+      font-style: normal;
+      color: #ffffff; 
+      flex-basis: 1vh;
+      flex-grow: 1;
+      flex-shrink: 1;  
+
+  }
+  .flex-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+    
+    
+
+    
+    
+
+  }
+  .signup_button{
+    background-image: ;
+  }
+
+  
+  
+
+  .pic{ 
+    position: relative;
+    
+    
+  }
+  h1{
+      font-family: "Duru Sans", sans-serif;
+      font-weight:lighter 100;
+      font-style: normal;   
+      font-size: 80px; 
+      line-height: 140%;
+      letter-spacing: 2%;
+
+
+  }
+
+  .pic>img{
+    position: relative;
+    top: 60px;
+    height: 515px;
+    width: 515px;
+    border-radius: 3%;
+    
+  }
+  .pic>div{
+    height: 515px;
+    width: 515px;
+    border-radius: 3%;
+    position: absolute;
+    left: 6%;
+    top: 17.8%;
+  }
+
+
+
+
+  footer{
+    text-align: end;
+
+  }
+
+  */
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Duru+Sans&display=swap');
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.nav {
+  min-height: 65px;
+  width: 100%;
+  
+  
+  background-color: black;
+  display: flex;
+  justify-content: flex-start; /* Added */
+  align-items: center; /* Added */
+  padding: 0 1rem; /* Added */
+  margin-top: 1rem;
+  position: relative;
+  box-sizing: border-box;
+
+  
+}
+
+.list_items {
+  display: flex;
+}
+
+.first {
+  position: relative;
+  bottom: 3%;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  padding: 2rem;
+}
+
+span {
+  color: #85b7ca;
+}
+
+.container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 30px;
+  height: 2px;
+  background-color: #ffffff;
+  margin: 6px;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+
+/*.logoContainer {
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4vh;
+  z-index: 3;
+}
+
+.logo {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo > img {
+  height: 8vh;
+  width: 9vh;
+  margin-bottom: 0;
+}
+
+.logo > p {
+  font-family: "Architects Daughter", cursive;
+  font-size: small;
+  font-weight: 400;
+  color: #ffffff;
+} */
+
+
+  .logoContainer {
+    display: flex; /* Changed */
+    justify-content: center; /* Changed */
+    align-items: center; /* Changed */
+    flex-grow: 1; /* Added */
+    position: absolute;
+    top: -5px;
+    left: 50%; 
+    transform: translateX(-50%);
+    
+  }
+
+
+.logo {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2px;
+}
+
+.logo > img {
+  height: 8vh;
+  width: 9vh;
+  margin-bottom: -15px;
+}
+
+
+
+
+
+main a{
+  color: #85b7ca;
+  text-decoration: none;
+}
+
+main a:hover{
+  text-decoration: underline;
+}
+
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+/* Ensure the children of .flex-container are flex items */
+
+
+.pic{
+  flex: 1 1 1;
+  height: 550px;
+  
+}
+
+
+
+
+
+.tagLine {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Ensures content starts from the top */
+  align-items: flex-start; /* Aligns content to the top left */
+ 
+  
+  flex: 1;
+}
+
+
+.signup_button {
+ 
+  background-color: black;
+  
+ 
+  width: 15vw;
+  height: 4vh;
+  padding: 0;
+  margin: 0;
+  min-width: 90px;
+  width: 47px;
+ 
+ 
+  color: #ffffff;
+  font-size: 1em;
+
+  
+
+}
+
+/* Optional: Add hover effect */
+.signup_button:hover {
+  background-color: #85b7ca;
+  border: #85b7ca;
+  
+}
+
+.signup_button+p{
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+  
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+  .pic > img, .pic > .background-div {
+    height: 300px; /* Adjust height */
+    width: 300px; /* Adjust width */
+  }
+
+  .flex-container{
+    display: block;
+    justify-content: space-evenly ;
+  }
+
+  .pic{
+    margin-left: 0;
+    margin-top: ;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+h1 {
+  font-family: "Duru Sans", sans-serif;
+  font-weight: 100;
+  font-size: 6vw;
+  line-height: 140%;
+  letter-spacing: 2%;
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  text-align: end;
+}
+
+  
+@media (max-width: 600px) {
+  .nav {
+    padding: 0; /* Remove padding */
+  }
+
+  .logoContainer {
+    top: -5px; /* Keep the logo position adjusted */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .logo > img {
+    height: 7vh; /* Adjust height */
+    width: 8vh; /* Adjust width */
+    margin-bottom: -10px; /* Adjust overlap */
+  }
+
+ 
+
+  .list_items {
+    justify-content: flex-start; /* Ensure list items are correctly positioned */
+  }
+
+  .pic > img, .pic > .background-div {
+    height: 300px; /* Adjust image height */
+    width: 300px; /* Adjust image width */
+  }
+
+  h1 {
+    font-size: 50px; /* Adjust font size */
+  }
+} 
+
+
+
+/* Media query for screens above 1039px */
+@media (min-width: 1040px) {
+  .pic > img {
+    height: 515px;
+    width: 515px;
+  }
+
+  .pic > .background-div {
+    height: 520px;
+    width: 520px;
+  }
+}
