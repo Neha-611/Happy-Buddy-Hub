@@ -1,2 +1,2 @@
 # Happy-Buddy-Hub
-Alocal community digital platform 
+A local community digital platform 
